@@ -55,6 +55,24 @@ body, header, section {
   width: 100%;
 }
 
+.skip-link {
+  height: 0;
+}
+
+.skip-link:focus, 
+.skip-link:active {
+  background: var(--verde);
+  border-radius: 5px;
+  color: var(--gris-oscuro);
+  font-family: var(--secondary-font);
+  height: auto;
+  margin: 16px 0 8px;
+  padding: 8px;
+  text-decoration: none;
+  border: 5px solid var(--gris-oscuro);
+  outline: 4px solid var(--verde);
+}
+
 .header {
   color: var(--blanco);
   font-family: var(--main-font);
@@ -95,6 +113,15 @@ nav {
   color: var(--blanco);
 }
 
+.nav-item:focus-within {
+  background-color: var(--verde);
+}
+
+.nav-item a:focus {
+  outline: none;
+  color: var(--gris-oscuro);
+}
+
 .nav-item {
   align-items: center;
   border-radius: 5px;
@@ -133,10 +160,19 @@ nav {
   color: var(--blanco);
   font-family: var(--secondary-font);
   text-decoration: none;
+  margin-top: 5px;
+}
+
+.social-media li a:focus {
+  outline: none;
+}
+
+.social-media li:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .social-link-text {
-  padding: 0 8px;
+  padding: 5px 8px;
 }
 
 .carousel {
@@ -147,7 +183,8 @@ nav {
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 815px;
+  padding: 8px;
 }
 
 .project-container {
@@ -163,6 +200,11 @@ nav {
 .project-container button {
   background: none;
   border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .project {
@@ -218,8 +260,8 @@ nav {
 }
 
 .form-label {
-  color: var(--blanco);
-  font-family: var(--main-font);
+  color: var(--verde);
+  font-family: var(--secondary-font);
 }
 
 .message-input input {
@@ -228,15 +270,19 @@ nav {
 }
 
 input {
-  outline: none;
   width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
 }
 
 .send-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
+  color: var(--gris-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
@@ -245,6 +291,7 @@ input {
   width: 150px;
   margin-left: auto;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .notification {
