@@ -105,13 +105,17 @@ nav {
   width: 33%;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:hover a {
   background-color: var(--verde);
+  cursor: pointer;
+  color: var(--gris-oscuro);
 }
 
 .intro {
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
+  color: var(--blanco);
 }
 
 .social-media {
@@ -120,6 +124,19 @@ nav {
   justify-content: space-around;
   margin: 32px auto 0;
   width: 20%;
+}
+
+.social-media li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+}
+
+.social-link-text {
+  padding: 0 8px;
 }
 
 .carousel {
@@ -198,6 +215,11 @@ nav {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+
+.form-label {
+  color: var(--blanco);
+  font-family: var(--main-font);
 }
 
 .message-input input {
