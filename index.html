@@ -32,7 +32,7 @@
         <p class="intro">
           Hola! Soy Melina 👋 Actualmente trabajo en S4N, como desarrolladora de
           software, enfocada en todo lo que es el desarrollo front-end. Amo
-          dibujar 🎨 (manga japonés), el cine, la música y los idiomas,
+          dibujar 🎨 (cómic japonés), el cine, la música y los idiomas,
           actualmente me encuentro aprendiendo Coreano 🇰🇷 Soy una mujer muy
           activa en las comunidades de tecnología en mi país, creo fuertemente
           en poder cambiar la vida de las personas a través del desarrollo de
@@ -123,20 +123,23 @@
 
     <footer class="contact-section">
       <h2 class="header">Contacto</h2>
+      <p class="intro">Puedes usar el formulario que sigue para enviarme un mensaje</p>
       <form class="form-container">
-        <p class="form-label">Nombre</p>
-        <input type="text" aria-label="nombre" /> <br />
-        <p class="form-label">Correo</p>
-        <input type="text" aria-label="correo" /> <br />
+        <label class="form-label">Nombre</label>
+        <input type="text" aria-label="name" id="name" />
+        <span id="name-error" aria-live="assertive"></span> 
+        <br />
+        <label class="form-label">Correo</label>
+        <input type="text" aria-label="email" /> <br />
         <div class="message-input">
-          <p class="form-label">Mensaje</p>
-          <input type="text" aria-label="mensaje" /> <br />
+          <label class="form-label">Mensaje</label>
+          <input type="text" aria-label="message" /> <br />
         </div>
         <button class="send-button">Enviar</button>
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive"></div>
     <div class="modal-container">
       <div class="modal">
         <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un dibujo mio</h2> 
