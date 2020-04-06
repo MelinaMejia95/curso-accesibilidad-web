@@ -297,6 +297,13 @@ input:focus {
   margin-left: auto;
   font-size: 16px;
   cursor: pointer;
+  outline: none;
+}
+
+.send-button:focus,
+.modal-button:focus {
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .notification {
@@ -323,6 +330,10 @@ input:focus {
   justify-content: center;
   position: fixed;
   width: 100vw;
+}
+
+#modal-header {
+  outline: 3px solid var(--verde);
 }
 
 .modal {
